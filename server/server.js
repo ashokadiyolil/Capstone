@@ -10,7 +10,7 @@ const app = express();
 
 //db connect 
 console.log(process.env.MONGODB_URI );
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://<username>:<password>@cluster0.urf42h2.mongodb.net/Ecommerce?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://ashoa:hBc7FhZ09MnXZ9DZ@cluster0.x8hqpmz.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -20,6 +20,7 @@ const PORT = process.env.PORT || 8080;
 
 const allowedOrigins = [
     'https://mernstackfrontendserver.onrender.com/',
+    'https://capstone-ashok.onrender.com/',
     'http://127.0.0.1:5500',
     'http://localhost:3500',
     'http://localhost:3000'
